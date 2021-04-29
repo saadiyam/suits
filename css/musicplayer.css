@@ -1,0 +1,115 @@
+#myProgress {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	 background-color: #d9d9f2; 
+	cursor: pointer;
+	height: 0px;
+	border-radius: 10px;
+  }
+  
+  #myBar {
+	width: 0%;
+	height: 10px;
+	margin: -5px;
+	background-color: #757575;
+	border-radius: 10px;
+  }
+  
+  .logo {
+	fill: red;
+  }
+  
+  .btn-action{
+	cursor: pointer;
+	padding-top: 10px;
+	width: 40px;
+  }
+  
+  .btn-ctn, .infos-ctn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .infos-ctn{
+  padding-top: 20px;
+  }
+  
+  .btn-ctn > div {
+   padding: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  
+  .infos-ctn > div {
+  margin-left: 0%;
+   color: rgb(192, 190, 190);
+   width: fit-content;
+   font-size: 15px;
+  }
+  
+  .first-btn{
+	margin-left: 3px;
+  }
+  
+  .duration{
+	margin-left: 10px;
+  }
+  
+  .title{
+	margin-left: 10px;
+	width: 210px;
+	text-align: center;
+  }
+  
+  .player-ctn{
+    width: 100vw;
+    background-color: rgba(18, 18, 18, 1);
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+	left: 0;
+	padding: 3px;
+	z-index: 999;
+  }
+  
+  .timer, .duration {
+	  display: none;
+  }
+  .playlist-track-ctn > div{
+	margin:10px;
+  }
+  .playlist-info-track{
+	width: 80%;
+  }
+  .playlist-info-track,.playlist-duration{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: #e9cc95;
+	font-size: 14px;
+	pointer-events: none;
+  }
+  .playlist-ctn{
+	 display: none;
+  }
+  .active-track{
+	background: #4d4d4d;
+	color: rgb(192, 190, 190) !important;
+	font-weight: bold;
+	
+  }
+  
+  .active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+	color: rgb(192, 190, 190) !important;
+  }
+  
+  
+  .playlist-btn-play{
+	pointer-events: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+  .fas{
+	color: rgb(192, 190, 190);
+	font-size: 20px;
+  }
