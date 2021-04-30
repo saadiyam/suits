@@ -5,15 +5,14 @@
 	 background-color: #d9d9f2; 
 	cursor: pointer;
 	height: 0px;
-	border-radius: 10px;
+  padding: 2.5px;
   }
   
   #myBar {
 	width: 0%;
-	height: 10px;
-	margin: -5px;
+	height: 5px;
+	margin: -2.5px;
 	background-color: #757575;
-	border-radius: 10px;
   }
   
   .logo {
@@ -23,7 +22,7 @@
   .btn-action{
 	cursor: pointer;
 	padding-top: 10px;
-	width: 40px;
+	width: 35px;
   }
   
   .btn-ctn, .infos-ctn{
@@ -37,8 +36,8 @@
   
   .btn-ctn > div {
    padding: 5px;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 8px;
+   margin-bottom: 8px;
   }
   
   .infos-ctn > div {

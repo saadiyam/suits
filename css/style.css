@@ -176,7 +176,7 @@ p {
 }
 
 
-#fh5co-header {
+#header {
   position: absolute;
   z-index: 999999;
   width: 100%;
@@ -184,28 +184,28 @@ p {
   top: 0;
   float: left;
 }
-#fh5co-header .navbar {
+#header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-#fh5co-header #navbar li {
+#header #navbar li {
   display: block !important;
   margin: 15px 10px;
   
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-header #navbar li {
+  #header #navbar li {
     margin-left: 10px !important;
   }
 }
-#fh5co-header #navbar li a {  
+#header #navbar li a {  
   font-size: 16px;
   font-weight: 400;
 }
 
-#fh5co-header #navbar li a span {
+#header #navbar li a span {
   position: relative;
   display: block;
   padding-bottom: 2px;
@@ -214,8 +214,8 @@ p {
   color: rgb(192, 190, 190);
 }
 
-@media screen and (max-width: 425px) {
-  #fh5co-header #navbar li a span {
+@media screen and (max-width: 453px) {
+  #header #navbar li a span {
     position: relative;
     display: block;
     padding-bottom: 2px;
@@ -227,7 +227,7 @@ p {
 }
 
 @media screen and (max-width: 385px) {
-  #fh5co-header #navbar li a span {
+  #header #navbar li a span {
     position: relative;
     display: block;
     padding-bottom: 2px;
@@ -238,26 +238,26 @@ p {
   }
 }
 
-#fh5co-header.navbar-fixed-top #navbar li a {
+#header.navbar-fixed-top #navbar li a {
   color: #cccc;
   text-decoration: none;
 }
 
-#fh5co-header #navbar li a:hover {
+#header #navbar li a:hover {
   color: #000;
 }
 
-#fh5co-header #navbar li.active a {
+#header #navbar li.active a {
   background: #000;
   background: none;
 }
 
 @media screen and (max-width: 480px) {
-  #fh5co-header #navbar li.active a {
+  #header #navbar li.active a {
     color: #ffffff;
   }
 }
-#fh5co-header .navbar-brand {
+#header .navbar-brand {
   float: left;
   display: block;
   font-size: 24px;
@@ -268,7 +268,7 @@ p {
   letter-spacing: 3px;
   position: relative;
 }
-#fh5co-header .navbar-brand:after, #fh5co-header .navbar-brand:before {
+#header .navbar-brand:after, #header .navbar-brand:before {
   content: "";
   position: absolute;
   display: block;
@@ -282,64 +282,64 @@ p {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#fh5co-header .navbar-brand:before {
+#header .navbar-brand:before {
   left: 0px;
   background: rgba(140, 118, 118, 0.8);
 }
-#fh5co-header .navbar-brand > span {
+#header .navbar-brand > span {
   color: #ffffff;
 }
 @media screen and (max-width: 992px) {
-  #fh5co-header .navbar-brand {
+  #header .navbar-brand {
     padding-left: 55px !important;
     padding-right: 0 !important;
   }
-  #fh5co-header .navbar-brand:after, #fh5co-header .navbar-brand:before {
+  #header .navbar-brand:after, #header .navbar-brand:before {
     margin-left: 25px;
   }
 }
-#fh5co-header.navbar-fixed-top {
+#header.navbar-fixed-top {
   position: fixed !important;
   background: #000;
   margin-top: 0px;
   top: 0;
 }
-#fh5co-header.navbar-fixed-top .navbar-brand {
+#header.navbar-fixed-top .navbar-brand {
   color: #535659;
 }
-#fh5co-header.navbar-fixed-top #navbar li a {
+#header.navbar-fixed-top #navbar li a {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#fh5co-header.navbar-fixed-top #navbar li a:hover {
+#header.navbar-fixed-top #navbar li a:hover {
   color: #ffffff;
 }
 @media screen and (max-width: 992px) {
-  #fh5co-header.navbar-fixed-top #navbar li a {
+  #header.navbar-fixed-top #navbar li a {
     font-size: 20px;
   }
 }
-#fh5co-header.navbar-fixed-top #navbar li.active a {
+#header.navbar-fixed-top #navbar li.active a {
   color: #ffffff !important;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header.navbar-fixed-top #navbar li.active a {
+  #header.navbar-fixed-top #navbar li.active a {
     color: #ffffff !important;
   }
 }
-#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+#header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+  #header.navbar-fixed-top #navbar li.active a span:before {
     background-color: transparent;
   }
 }
-#fh5co-header .navbar-default {
+#header .navbar-default {
   border: transparent;
   background: transparent;
   margin: 0;
@@ -351,33 +351,33 @@ p {
   border-radius: 0px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header .navbar-default {
+  #header .navbar-default {
     margin-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
   }
 }
 
-#fh5co-home {
+#home {
   background: #000;
   width: 100%;
   color: #fff;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-home {
+  #home {
     background-position: center center;
     background-attachment: initial;
   }
 }
 
-#fh5co-home a {
+#home a {
   color: rgba(255, 255, 255, 0.8) !important;
   text-decoration: underline;
 }
-#fh5co-home a:hover {
+#home a:hover {
   color: #fff;
 }
-#fh5co-home .gradient {
+#home .gradient {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -386,17 +386,17 @@ p {
   z-index: 2;
   background: rgba(0, 0, 0, 0.3);
 }
-#fh5co-home, #fh5co-home .text-wrap {
+#home, #home .text-wrap {
   height: 900px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-home .text-wrap {
+  #home .text-wrap {
     height: 500px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  #fh5co-home .text-wrap {
+  #home .text-wrap {
     text-align: center;
   }
 }
@@ -407,34 +407,34 @@ p {
 
 @media screen and (max-width: 425px) {
   .heading {
-    margin-top: 100px;
+    margin-top: 180px;
   }
 }
 
 
-#fh5co-home .text-wrap {
+#home .text-wrap {
   display: table;
   width: 100%;
   position: relative;
   z-index: 4;
 }
 
-#fh5co-home .text-inner h1 {
+#home .text-inner h1 {
   font-size: 60px;
   color: white;
   margin: 0 0 30px 0;
   font-weight: 700;
   line-height: 58px;
 }
-#fh5co-home .text-inner h1 span {
+#home .text-inner h1 span {
   color: #ffffff;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-home .text-inner h1 {
+  #home .text-inner h1 {
     font-size: 40px;
   }
 }
-#fh5co-home .text-inner h2 {
+#home .text-inner h2 {
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
@@ -443,31 +443,31 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-  #fh5co-home .text-inner h2 {
+  #home .text-inner h2 {
     margin: 0 0 10px 0;
   }
 }
 
-#fh5co-explore,
-#fh5co-team,
-#fh5co-footer,
+#explore,
+#team,
+#footer,
 .getting-started  {
   padding: 8em 0;
 
 }
 @media screen and (max-width: 768px) {
-  #fh5co-explore,
-  #fh5co-team,
-  #fh5co-footer {
+  #explore,
+  #team,
+  #footer {
     padding: 3em 0;
   }
 }
 
-.fh5co-explore {
+.explore {
   padding-bottom: 40px;
 }
 
-.fh5co-project .col-md-4 {
+.project .col-md-4 {
   padding: 30px;
 
 }
@@ -503,7 +503,7 @@ p {
 
 
 
-#fh5co-team .team-box {
+#team .team-box {
   position: relative;
   padding: 30px;
   float: left;
@@ -511,48 +511,48 @@ p {
   background: rgba(0,0,0,0);
 }
 @media screen and (max-width: 992px) {
-  #fh5co-team .team-box {
+  #team .team-box {
     margin-bottom: 110px;
   }
 }
-#fh5co-team .team-box .user {
+#team .team-box .user {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 80%;
 }
-#fh5co-team .team-box .user img {
+#team .team-box .user img {
   width: 80%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#fh5co-team .team-box h3 {
+#team .team-box h3 {
   margin-bottom: 10px;
   font-weight: 700;
   
 }
-#fh5co-team .team-box .position {
+#team .team-box .position {
   font-size: 16px;
   color: #8f989f;
   display: block;
   margin-bottom: 30px;
 }
-#fh5co-team .team-box .social-media {
+#team .team-box .social-media {
   margin: 0;
   padding: 0;
 }
-#fh5co-team .team-box .social-media li {
+#team .team-box .social-media li {
   display: inline-block;
   margin: 0;
   padding: 0;
   font-size: 24px;
   margin-right: 10px;
 }
-#fh5co-team .team-box .social-media li a {
+#team .team-box .social-media li a {
   color: rgba(255, 255, 255, 0.8);
 }
-#fh5co-team .team-box .social-media li a:hover, #fh5co-team .team-box .social-media li a:focus, #fh5co-team .team-box .social-media li a:active {
+#team .team-box .social-media li a:hover, #team .team-box .social-media li a:focus, #team .team-box .social-media li a:active {
   text-decoration: none;
   color: #ffffff !important;
 }
@@ -591,64 +591,64 @@ p {
   }
 }
 
-#fh5co-footer {
+#footer {
   color: rgba(255, 255, 255, 0.6);
   background: #0f0d0d;
 }
-#fh5co-footer a {
+#footer a {
   color: rgba(255, 255, 255, 0.6);
 }
-#fh5co-footer a:hover {
+#footer a:hover {
   color: #fff !important;
   text-decoration: underline;
 }
-#fh5co-footer .section-title {
+#footer .section-title {
   font-size: 22px;
   color: #fff;
   position: relative;
   padding-bottom: 20px;
 }
-#fh5co-footer .copy-right {
+#footer .copy-right {
   position: relative;
   padding-top: 20px;
   margin-top: 40px;
 }
-#fh5co-footer .copy-right > a {
+#footer .copy-right > a {
   color: rgba(255, 255, 255, 0.6);
 }
-#fh5co-footer .contact-info {
+#footer .contact-info {
   margin: 0 0 60px 0;
   padding: 0;
 }
-#fh5co-footer .contact-info li {
+#footer .contact-info li {
   font-size: 16px;
   list-style: none;
   margin: 0 0 20px 0;
   position: relative;
   padding-left: 40px;
 }
-#fh5co-footer .contact-info li i {
+#footer .contact-info li i {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 22px;
   color: #ffffff;
 }
-#fh5co-footer .social-media {
+#footer .social-media {
   margin: 0 0 30px 0;
   padding: 0;
 }
-#fh5co-footer .social-media li {
+#footer .social-media li {
   display: inline-block;
   margin: 0;
   padding: 0;
   font-size: 24px;
   margin-right: 10px;
 }
-#fh5co-footer .social-media li a {
+#footer .social-media li a {
   color: #ffffff;
 }
-#fh5co-footer .social-media li a:hover, #fh5co-footer .social-media li a:focus, #fh5co-footer .social-media li a:active {
+#footer .social-media li a:hover, #footer .social-media li a:focus, #footer .social-media li a:active {
   text-decoration: none;
 }
 
@@ -691,7 +691,7 @@ p {
   opacity: 0;
 }
 
-.fh5co-animated {
+.animated {
   -webkit-animation-duration: .3s;
   animation-duration: .3s;
   -webkit-animation-fill-mode: both;

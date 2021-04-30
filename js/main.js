@@ -72,7 +72,7 @@
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-fh5co-nav-toggle').removeClass('active');
+		    	$('.js-nav-toggle').removeClass('active');
 		    }
 
 		    event.preventDefault();
@@ -122,16 +122,16 @@
 
 		$(window).scroll(function(event){
 
-		   	var header = $('#fh5co-header'),
+		   	var header = $('#header'),
 				scrlTop = $(this).scrollTop();
 
 			if ( scrlTop > 500 && scrlTop <= 2000 ) {
-				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+				header.addClass('navbar-fixed-top animated slideInDown');
 			} else if ( scrlTop <= 500) {
 				if ( header.hasClass('navbar-fixed-top') ) {
-					header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+					header.addClass('navbar-fixed-top animated slideOutUp');
 					setTimeout(function(){
-						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
+						header.removeClass('navbar-fixed-top animated slideInDown slideOutUp');
 					}, 100 );
 				}
 			} 
@@ -143,15 +143,15 @@
 	// Animations
 	// Home
 	var homeAnimate = function() {
-		if ( $('#fh5co-home').length > 0 ) {	
+		if ( $('#home').length > 0 ) {	
 
-			$('#fh5co-home').waypoint( function( direction ) {
+			$('#home').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-home .to-animate').each(function( k ) {
+						$('#home .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -172,7 +172,7 @@
 
 	var exploreAnimate = function() {
 
-		var explore = $('#fh5co-explore');
+		var explore = $('#explore');
 		if ( explore.length > 0 ) {	
 
 			explore.waypoint( function( direction ) {
@@ -262,94 +262,8 @@
 		}
 	};
 
-
-	var pricingAnimate = function() {
-		var pricing = $('#fh5co-pricing');
-		if ( pricing.length > 0 ) {	
-
-			pricing.waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-
-
-					setTimeout(function() {
-						pricing.find('.to-animate').each(function( k ) {
-							var el = $(this);
-							
-							setTimeout ( function () {
-								el.addClass('fadeIn animated');
-							},  k * 200, 'easeInOutExpo' );
-							
-						});
-					}, 200);
-
-					setTimeout(function() {
-						pricing.find('.to-animate-2').each(function( k ) {
-							var el = $(this);
-							
-							setTimeout ( function () {
-								el.addClass('fadeInUp animated');
-							},  k * 200, 'easeInOutExpo' );
-							
-						});
-					}, 200);
-
-					
-					$(this.element).addClass('animated');
-						
-				}
-			} , { offset: '80%' } );
-
-		}
-	};
-
-
-	var servicesAnimate = function() {
-		var services = $('#fh5co-services');
-		if ( services.length > 0 ) {	
-
-			services.waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-
-
-					var sec = services.find('.to-animate').length,
-						sec = parseInt((sec * 200) + 400);
-
-					setTimeout(function() {
-						services.find('.to-animate').each(function( k ) {
-							var el = $(this);
-							
-							setTimeout ( function () {
-								el.addClass('fadeInUp animated');
-							},  k * 200, 'easeInOutExpo' );
-							
-						});
-					}, 200);
-
-					setTimeout(function() {
-						services.find('.to-animate-2').each(function( k ) {
-							var el = $(this);
-							
-							setTimeout ( function () {
-								el.addClass('bounceIn animated');
-							},  k * 200, 'easeInOutExpo' );
-							
-						});
-					}, sec);
-
-					
-					$(this.element).addClass('animated');
-						
-				}
-			} , { offset: '80%' } );
-
-		}
-	};
-
-
 	var teamAnimate = function() {
-		var team = $('#fh5co-team');
+		var team = $('#team');
 		if ( team.length > 0 ) {	
 
 			team.waypoint( function( direction ) {
@@ -392,7 +306,7 @@
 
 
 	var footerAnimate = function() {
-		var footer = $('#fh5co-footer');
+		var footer = $('#footer');
 		if ( footer.length > 0 ) {	
 
 			footer.waypoint( function( direction ) {
@@ -419,28 +333,6 @@
 		}
 	};
 
-
-	var counter = function() {
-		$('.js-counter').countTo({
-			 formatter: function (value, options) {
-	      return value.toFixed(options.decimals);
-	    },
-		});
-	};
-
-	var counterWayPoint = function() {
-		if ($('#fh5co-counter-section').length > 0 ) {
-			$('#fh5co-counter-section').waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
-					$(this.element).addClass('animated');
-						
-				}
-			} , { offset: '90%' } );
-		}
-	};
-
 	
 	// Document on load.
 	$(function(){
@@ -454,13 +346,8 @@
 		homeAnimate();
 		exploreAnimate();
 		gettingStartedAnimate();
-		pricingAnimate();
-		servicesAnimate();
 		teamAnimate();
 		footerAnimate();
-		counter();
-		counterWayPoint();
-
 	});
 
 

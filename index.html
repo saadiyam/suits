@@ -4,7 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="icon" type="image/ico" href="./images/bg.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -29,7 +30,7 @@
 
 	</head>
 	<body>
-	<header role="banner" id="fh5co-header">
+	<header role="banner" id="header">
 		<div class="fluid-container">
 			<nav class="navbar navbar-default">
 				<div id="navbar" class="navbar-collapse">
@@ -44,7 +45,7 @@
 	  </div>
 	</header>
 
-	<audio autoplay id="myAudio" ontimeupdate="onTimeUpdate()">
+	<audio id="myAudio" ontimeupdate="onTimeUpdate()">
 		<!-- <source src="audio.ogg" type="audio/ogg"> -->
 		<source id="source-audio" src="" type="audio/mpeg">
 		Your browser does not support the audio element.
@@ -62,18 +63,18 @@
 			</div>
 		   <div class="btn-action first-btn" onclick="previous()">
 			  <div id="btn-faws-back">
-				<i class='fas fa-step-backward'></i>
+				<img src="./images/forward.svg" height="20px" alt="back button">
 			  </div>
 		   </div>
 		   <div class="btn-action" onclick="toggleAudio()">
 			  <div id="btn-faws-play-pause">
-				<i class='fas fa-play' id="icon-play"></i>
-				<i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+				<img src="./images/play.svg" id="icon-play" height="30px" alt="play button">
+				<img src="./images/pause.svg" id="icon-pause" height="30px" alt="pause button">
 			  </div>
 		   </div>
 		   <div class="btn-action" onclick="next()">
 			  <div id="btn-faws-next">
-				<i class='fas fa-step-forward'></i>
+				<img src="./images/back.svg" height="20px" style="margin-right: 10px" alt="forward button">
 			  </div>
 		   </div>
 		</div>
@@ -81,7 +82,7 @@
 		<div class="playlist-ctn"></div>
 	  </div>
 		
-	<section id="fh5co-home" data-section="home" >
+	<section id="home" data-section="home" >
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
@@ -103,8 +104,8 @@
 
 	
 	
-	<section id="fh5co-team" data-section="team">
-		<div class="fh5co-team">
+	<section id="team" data-section="team">
+		<div class="team">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 section-heading text-center">
@@ -116,7 +117,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="images/user-1.jpg" alt="Roger Garfield"></div>
+							<div class="user"><img class="img-reponsive" src="images/user-1.jpg" alt="team member"></div>
 							<h3>Wagna</h3>
 							<span class="position">Power uh, ah</span>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
@@ -130,7 +131,7 @@
 
 					<div class="col-md-6">
 						<div class="team-box text-center to-animate-2">
-							<div class="user"><img class="img-reponsive" src="images/user-3.jpg" alt="Roger Garfield"></div>
+							<div class="user"><img class="img-reponsive" src="images/user-3.jpg" alt="team member"></div>
 							<h3>Tarantelov</h3>
 							<span class="position">Power Bumm, Tschakk</span>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
@@ -156,7 +157,7 @@
 		</div>
 	</div>
 
-	<section id="fh5co-explore" data-section="explore">
+	<section id="explore" data-section="explore">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
@@ -166,12 +167,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="fh5co-project">
+		<div class="project">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 text-center">
 						<div>
-							<img src="./images/pluribum.png" class="album-cover" width="auto">
+							<img src="./images/pluribum.png" class="album-cover" alt="album cover" width="auto">
 						</div>
 						<div>
 							<h3 style="margin-bottom: 10px; margin-top: 10px;">Name of Album</h3>
@@ -180,7 +181,7 @@
 					</div>
 					<div class="col-md-4 text-center">
 						<div>
-							<img src="./images/pluribum.png" class="album-cover" width="auto">
+							<img src="./images/pluribum.png" class="album-cover" alt="album cover" width="auto">
 						</div>
 						<div>
 							<h3 style="margin-bottom: 10px; margin-top: 10px;">Name of Album</h3>
@@ -189,7 +190,7 @@
 					</div>
 					<div class="col-md-4 text-center">
 						<div>
-							<img src="./images/pluribum.png" class="album-cover" width="auto">
+							<img src="./images/pluribum.png" class="album-cover" alt="album cover" width="auto">
 						</div>
 						<div>
 							<h3 style="margin-bottom: 10px; margin-top: 10px;">Name of Album</h3>
@@ -201,7 +202,7 @@
 		</div>
 	</section>
 
-	<div id="fh5co-footer" role="contentinfo">
+	<div id="footer" role="contentinfo">
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-md-4 to-animate">
@@ -248,7 +249,7 @@
 	</div>
 
 </div>
-	<!-- <div id="map" class="fh5co-map"></div> -->
+	<!-- <div id="map" class="map"></div> -->
 
 	
 	<!-- jQuery -->

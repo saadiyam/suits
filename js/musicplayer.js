@@ -100,7 +100,11 @@ currentAudio.onloadedmetadata = function() {
 
 var interval1;
 
+ document.querySelector('#icon-pause').style.display = 'none';
+
 function toggleAudio() {
+
+ 
 
   if (this.currentAudio.paused) {
     document.querySelector('#icon-play').style.display = 'none';
@@ -170,16 +174,6 @@ function seek(event) {
   var percent = event.offsetX / progressbar.offsetWidth;
   this.currentAudio.currentTime = percent * this.currentAudio.duration;
   barProgress.style.width = percent*100 + "%";
-}
-
-function forward(){
-  this.currentAudio.currentTime = this.currentAudio.currentTime + 5
-  this.setBarProgress();
-}
-
-function rewind(){
-  this.currentAudio.currentTime = this.currentAudio.currentTime - 5
-  this.setBarProgress();
 }
 
 
